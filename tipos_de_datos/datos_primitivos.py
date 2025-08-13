@@ -7,6 +7,22 @@ Variables -> contenedores que almacenan datos y a los que se les asigna un nombr
     - De tipado dinámico -> no se necesita declarar el tipo de dato almacenado en la variable
     - Son mutables (reasignables) -> pueden cambiar de valor como de tipo en cualquier momento
 
+
+OPERADORES DE ASIGNACIÓN -> usados para asignar valores a variables
+    - representan que un valor se está almacenando en una determinada variable
+    Tipos:
+        = -> asignación normal
+        += -> asignación con suma (primero suma, luego asigna el valor a la variable)
+        -= -> asignación con resta (primero resta, luego asigna el valor resultante)
+        *= -> asignación con multiplicación (primero opera, luego almacena el resultado)
+        /= -> asignación con división (primero opera, luego almacena el resultado)
+        //= -> asignación con división entera (el resultado de la división entera omite/elimina los decimales)
+        %= -> asignación con módulo (modulo -> retorna el resto de la división entre dos números)
+        **= -> asignación con potencia (eleva el primer número a la potencia del segundo y lo asigna) 
+        &= -> representación del and lógico (evalúa luego asigna)
+        |= -> representación del or lógico
+        ^= -> representación del not lógico 
+
 =============================================================
 
 TIPOS DE DATOS -> definen qué clase de información puede almacenar una variable y qué operaciones se pueden realizar con ella
@@ -150,6 +166,33 @@ print(f"División entera: {a // b}")
 print(f"Módulo: {a % b}")
 print(f"Potencia: {a ** b}")
 
+
+# ==================== EJERCICIOS BÁSICOS CON NÚMEROS ====================
+
+# calcular el área del círculo
+radio = 10
+area_del_circulo = 3.14 * radio * 2
+print(f"El área del círculo es: {area_del_circulo}")
+
+# calcular el área de un rectángulo
+longitud = 10
+ancho = 20
+area_del_rectangulo = longitud * ancho
+print(f"El área del rectángulo es: {area_del_rectangulo}")
+
+# calcular el grosor de un objeto
+masa = 75
+gravedad = 9.81
+grosor = masa * gravedad
+print(f"{grosor}N")
+
+# calcular la densidad de un líquido
+masa = 75 # kg
+volumen = 0.075 # en metros cúbicos
+densidad = masa / volumen
+print(densidad)
+
+
 # ==================== FUNCIONES MATEMÁTICAS ====================
 import math   # importación de funciones en el módulo math -> para usarlas y operar con ellas, es necesario incorporarlas con import
 
@@ -239,3 +282,12 @@ print(f"{x} == {y}: {x == y}")
 print(f"{x} != {y}: {x != y}")
 print(f"{x} < {y}: {x < y}")
 print(f"{x} <= {y}: {x <= y}")
+
+
+# ===================== Comparaciones con strings =====================
+print(len('banana') == len('coco'))  # False
+print(len('mango') != len('kiwi'))  # True
+print(len('mango') < len('toronja'))   # True
+print(len('leche') == len('carne'))      # True
+print(len('tomato') == len('potato'))  # True
+print(len('python') > len('javascript'))   # False
