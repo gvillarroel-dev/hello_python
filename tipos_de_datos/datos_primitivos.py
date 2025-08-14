@@ -239,6 +239,12 @@ OPERADORES LÓGICOS:
     - or -> retorna False SOLO SI AMBAS condiciones son FALSE; de lo contrario, mientras que una condición sea True, retorna True
     - not -> retorna el valor invertido. Si es True, retorna False y viceversa
 
+Operadores de pertenencia:
+    - is -> retorna true si ambas variables, elementos o valores son el mismo objeto o si pertenecen al mismo elemento
+    - not is -> retorna true si ambas variables no son el mismo objeto
+    - in -> evalúa si un elemento o valor se encuentra EN el otro elemento
+    - not in -> evalúa si un elemento o valor NO ESTÁ en el otro elemento
+
 OPERADORES DE COMPARACIÓN:
     - < (menor que...) -> retorna true si el primero es menor que el segundo
     - <= (menor o igual que...) -> retorna true si el primero es menor o igual al segundo
