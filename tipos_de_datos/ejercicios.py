@@ -90,6 +90,17 @@ Ejercicio 4: Programa que reemplaza texto de una cadena o frase
 # print(f"--- Frase actualizada: '{frase.replace(reemplazar, reemplazo)}' ---")
 
 
+"""
+Ejercicio 4.1: reverse strings
+    - el usuario ingresa una cadena de texto
+    - el programa retorna la misma cadena pero invertida
+"""
+
+text = input("Ingrese su texto aquí: ")
+reverse_text = text[::-1]
+print(reverse_text)
+
+
 # =================================== EJERCICIOS CON VALORES LÓGICOS ===================================
 
 """
